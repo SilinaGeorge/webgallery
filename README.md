@@ -1,6 +1,7 @@
 ---
-layout: default
-permalink: /assignments/02/README
+A Simple Web Gallery Application
+- make a web gallery (login/signup) and upload images
+- comment on other people images and like/dislike them
 ---
 
 # The Web Gallery REST API Documentation
