@@ -1,0 +1,26 @@
+
+.userlist{
+    margin-top:20px;
+    border-radius: 10px;
+    border: 2px #3C3D3F solid;
+    padding:20px 10px 10px 10px;
+    display:flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: none;
+}
+
+
+.username{
+    font-size: 14px;
+    align-items: center;
+    padding-bottom: 10px;
+    text-decoration-line: underline
+
+}
+
+

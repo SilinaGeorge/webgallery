@@ -1,0 +1,143 @@
+.layout
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 9fr 1fr 2fr; 
+    grid-gap: 0px;
+    margin-top: 15px;
+}
+
+.layout .hide
+{
+    display: none;
+}
+
+.delete_button
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url("../media/delete.png"); 
+    background-repeat: no-repeat;
+    background-position: top; 
+    height: 40px;
+
+}
+
+.image
+{
+    grid-column: 3;
+    grid-row: 1;
+    margin-right: 10px; 
+    margin-top: 20px;
+}
+
+.image img {
+    width: 99%;
+    height: 500px; 
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.image_info{
+    margin-top: 5px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.left-arrow
+{
+    grid-column: 2;
+    grid-row: 1;
+    background-image: url("../media/left-arrow.png"); 
+    background-repeat: no-repeat;
+    background-position: center;         
+}
+
+.right-arrow
+{
+    grid-column: 4;
+    grid-row: 1;
+    background-image: url("../media/right-arrow.png"); 
+    background-repeat: no-repeat;
+    background-position: left; 
+    
+}
+
+.comments{
+    overflow-y: auto;
+    word-break: break-all;
+    max-height: 350px;
+    text-align: left;
+}
+
+.comment_form{
+    margin-bottom:5px;
+    padding-bottom: 5px;
+    border-bottom: groove lightskyblue;
+}
+
+.comment_section
+{
+    grid-column: 5;
+    grid-row: 1;
+    margin-right: 20px;
+    text-align: center;
+    max-width: 350px;
+}
+
+
+.next_prev_buttons
+{
+    grid-column: 5;
+    grid-row: 2;
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+ 
+}
+
+.comment_prev_button{
+    background-image: url("../media/prev-comment.png"); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    grid-row: 1;
+    grid-column: 1;
+    font-weight: bold;
+    margin-left: 60px;
+}
+
+.comment_next_button
+{
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url("../media/next-comment.png"); 
+    background-repeat: no-repeat;
+    background-position: left; 
+    margin-right: 110px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.form_element{
+    width:300px;
+    margin-bottom:10px;
+    font-size: 10pt;
+    border-radius:10px;
+    padding:5px 10px 5px 10px;
+
+}
+
+.comment_form_title
+{
+    font-weight:bold;
+}
+
+.image_title
+{
+    font-weight: bold;
+}
+
+.image_author
+{
+    font-weight: bold;
+}

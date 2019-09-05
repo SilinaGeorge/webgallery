@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>The Web Gallery</title>
+    <link href="/style/main.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/add_image_form.css" rel="stylesheet" type="text/css"/>
+    <link href="/style/comment.css" rel="stylesheet" type="text/css"/>
+    <link href="style/form.css" rel="stylesheet" type="text/css"/>
+    <link href="style/userlist.css" rel="stylesheet" type="text/css"/>
+<!--     <link href="style/messages.css" rel="stylesheet" type="text/css"/> -->
+    <!-- <link href="style/form.css" rel="stylesheet" type="text/css"/> -->
+ </head>
+<body>
+        <header>
+               <div class="header_grid">
+                    <span id ="home_button" class="home_button"></span>
+                    <span id ="add_button" class="add_button"></span>
+                    <div>
+                        <h1>The Web Gallery</h1>
+                    </div>
+                    <div class="sign_buttons"> 
+                        <a href="/login.html" id="signin_button" class="btn header_btn hidden">Sign in or Sign up</a>
+                        <a href="/signout/" id="signout_button" class="btn header_btn hidden">Sign out</a>
+                    </div>
+                   
+            </div>
+        </header> 
+
+
+        
+    <div class="popup">
+            <form class="add_image_form" id="image_form" action='/api/images/' method="POST" enctype="multipart/form-data">
+                    <div class="add_image_title">Add Image</div> 
+                    <div></div>
+                    <input type="text" id="post_title" class="form_element" placeholder="Enter image title" name="image_title" required/>
+                    <input type="file" id="image_url" class="form_element" placeholder="Enter image url" name="image_url" required/>
+                    <button id= "add_image_to_gallery_button" type="submit" class="btn">Add image to gallery</button>
+                    <button id= "add_image_cancel_button" type="button" class="btn">Cancel</button>
+                    
+            </form>
+    </div>
+
+    <div id='userlist' class="userlist">
+            <h2>User Galleries</h2>
+
+    </div>
+
+
+    <div id="layout" class="layout">
+
+             <div id="delete_button" class="delete_button"></div> 
+           
+            <div id="prev" class="left-arrow"></div>
+
+        <div class="image">
+            <img id="display_image">
+        
+        </div>
+        <div id="image_info" class="image_info">
+                 
+        </div>
+ 
+        <div id="next" class="right-arrow"></div>
+
+        <div class="comment_section">
+            <div>
+                <form class="comment_form" id="create_comment_form">
+                        <div class="comment_form_title">Comments</div>
+                        <div></div>
+                        <textarea rows="3"  id="comment_content" class="form_element" name="user_comment" placeholder="Enter your comment" required></textarea>
+                        <button id= "post_button" type="submit" class="btn">Post</button>
+                </form>  
+            </div>
+
+            <div id="comments" class="comments">
+                
+            </div>
+
+            </div>
+
+            <div class="next_prev_buttons">
+                    <!-- <div class="comment_prev_button"></div> -->
+                    <div id="prev_comment_button" class="comment_prev_button">prev</div>
+                    <div id="next_comment_button" class="comment_next_button">next</div>
+            </div>
+
+    </div>
+
+    <footer>
+        <a href='credits.html'>credits</a>
+    </footer>
+    <script src="/js/api.js"></script> 
+    <script src="/js/index.js"></script>
+</body>
+</html>

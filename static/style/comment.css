@@ -1,0 +1,42 @@
+.comment{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid grey; 
+}
+
+.comment_username
+{
+    grid-row: 1;
+    font-size: small;
+    font-weight: bold;
+}
+
+.comment_date
+{
+    grid-row: 3;
+    color: darkgray;
+    font-size: small;
+    margin-top: 3px;
+}
+
+.comment_content {
+    
+    grid-column: 1;
+    grid-row: 2;
+    font-size: small;
+    margin-top: 3px;
+}
+
+.comment_delete_button{
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url('../media/delete-comment.png');
+    background-repeat:no-repeat;
+    background-size: 10px 10px;
+    text-align: right;
+
+}
+

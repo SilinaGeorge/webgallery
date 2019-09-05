@@ -1,0 +1,84 @@
+html {overflow: -moz-scrollbars-vertical;}
+
+body {
+    background: #ECECEA;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+    text-align: left;
+
+    margin: auto;
+}
+
+.header_grid
+{
+    display: grid;
+    grid-template-columns: 8% 8% 70%  14%; 
+    border-bottom: solid black;
+    margin-top: 5px;
+}
+
+.add_button
+{
+    grid-column: 2;
+    background-image: url("../media/add.png"); 
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 35px;
+
+    
+}
+
+.home_button
+{
+    grid-column: 1;
+    background-image: url("../media/home.png"); 
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 35px;
+    margin-left: 20px;
+
+}
+
+.sign_buttons{
+    margin-right: 10px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 17pt;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 7%;
+}
+
+
+footer{
+    margin-top: 20px;
+    text-align:center;
+}
+
+.alert{
+    color: red;
+}
+
+.btn{
+    border-radius:10px;
+    text-align:center;
+    font-size: 14px;
+    color:white;
+    background: #013b96;
+    border: 1px #013b96 solid;
+    padding: 5px 10px 5px 10px;
+}
+
+.btn:hover {
+  background: black;
+  color: #ffffff;
+}
+
+.hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
