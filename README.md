@@ -6,6 +6,12 @@ A Simple Web Gallery Application
 
 # The Web Gallery REST API Documentation
 
+## How to Run
+-open command line window, navigate to /webgallery run nodmeon app.js to run server on port 3000
+- open another command line window, navigate to /webgallery/static run browser-sync start --server --files="**/*"
+- browser window will open, make sure port is on 3000
+
+
 ## Signup/in/out API
 
 ### Signup
